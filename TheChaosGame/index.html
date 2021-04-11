@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>The Chaos Game</title>
+<head>
+  <link rel="stylesheet" href="index.css">
+  <header class="title">The Chaos Game</header>
+</head>
+<body>
+  <div id="menuBar" class="menuBar">
+    <button id="startButton" style="margin-left:1%">Start</button>
+    <button id="stopButton" style="margin-left:8%">Stop</button>
+    <button id="resetButton" style="margin-left:15%">Reset</button>
+    <p id="counter" class="counter"><p>
+    <button id="infoButton" class="infoButton">i</button>
+    <p class="slidertxt">Speed: <p>
+      <input type="range" min="1" max="500" value="1" id="slider" class="slider">
+    <button id="autoFillButton" class="autoFillButton" style="margin-left:41%">Auto Fill</button>
+  </div>
+  <div class="canvasBox">
+    <canvas id="canvas"></canvas>
+  </div>
+  <div id="info" class="info">
+    <p id="infoTxt" class="infoTxt">
+    The Chaos Game is a method to create fractals using random number generation.<br/>
+    First, a random starting point is chosen. <br/>
+    For each subsequent turn, a random number is generated to chose a vertex of the polygon.<br/>
+    A point is then placed halfway between the starting point and the chosen vertex. <br/>
+    The process is repeated many times starting from each newly placed point. <br/>
+    <br/>
+    Eventually, a fractal is created! <br/>
+    This simulation allows the process to be automated and viewed in real time
+    at variable speeds, using the speed slider and the options to start and stop the simulation at will.
+    </p>
+    <button id="closeInfoButton" class="closeInfoButton">OK</button>
+  </div>
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
