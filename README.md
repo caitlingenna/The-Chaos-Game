@@ -7,5 +7,6 @@ The process is repeated many times starting from each newly placed point.
 
 ![demoImg](demoImage.png)
 
-This simulation allows the process to be automated and viewed in real time at variable speeds. 
+This simulation allows the process to be automated and viewed in real time at variable speeds. <br>
+The current version is deployed at https://caitlingenna.github.io/TheChaosGame/ <br>
 Support for more fractal types coming soon!
